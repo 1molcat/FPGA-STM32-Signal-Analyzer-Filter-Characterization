@@ -38,31 +38,31 @@ The current RTL data-path has explicit room for synthesizability and precision o
 ## 📸 Hardware Implementation & Debugging
 
 <div align="center">
-  <img src="figure/system_testbench_setup.jpg" width="700">
+  <img src="figure/system_testbench_setup.jpg" width="500">
   <br><i>Figure 1: Full system testbench including STM32 control plane, FPGA data plane, and RF analog front-end.</i>
 </div>
 <br>
 
 <div align="center">
-  <img src="figure/custom_pcb_layout.png" width="700">
+  <img src="figure/custom_pcb_layout.png" width="500">
   <br><i>Figure 2: Custom PCB layout design with extensive SPI, UART, ADC, and DAC interfaces.</i>
 </div>
 <br>
 
 <div align="center">
-  <img src="figure/oscilloscope_waveform_verification.jpg" width="700">
+  <img src="figure/oscilloscope_waveform_verification.jpg" width="500">
   <br><i>Figure 3: Real-time DSP output waveform verification using a Tektronix oscilloscope.</i>
 </div>
 <br>
 
 <div align="center">
-  <img src="figure/hardware_prototyping_debugging.jpg" width="700">
+  <img src="figure/hardware_prototyping_debugging.jpg" width="500">
   <br><i>Figure 4: Hands-on prototyping and hardware-level debugging.</i>
 </div>
 <br>
 
 <div align="center">
-  <img src="figure/spi_timing_verification.gif" width="700">
+  <img src="figure/spi_timing_verification.gif" width="500">
   <br><i>Figure 5: Hardware-Level Debugging - Verifying SPI communication timing (SCLK and MOSI/MISO alignment) to ensure strict protocol synchronization.</i>
 </div>
 

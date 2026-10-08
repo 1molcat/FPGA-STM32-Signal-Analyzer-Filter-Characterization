@@ -34,7 +34,22 @@ The current RTL data-path has explicit room for synthesizability and precision o
 1. **Divider Placeholder:** The DSP coordinate transformation path currently uses behavioral constructs (the `$past` system task) for delay matching. This is slated to be replaced with an `LPM_DIVIDE` hardware IP and explicit shift-register chains to ensure strict RTL synthesizability.
 2. **Small-Signal Quantization Noise:** To achieve single-cycle LUT addressing, the squared magnitude is directly truncated (top 12 bits). This introduces noticeable quantization noise for small inputs. A planned optimization is the introduction of a **Leading Zero Detector (LZD)** for dynamic bit-shifting (Block Floating Point logic) to maximize dynamic range without increasing ROM depth.
 3. **Data Flow Handshaking:** The DSP pipeline currently lacks global `valid/ready` handshake signals, relying entirely on static clock cycle delays. This poses potential timing risks that will be addressed in the next iteration.
+## 📸 Hardware Implementation & Debugging
 
+![System Testbench Setup](figure/system_testbench_setup.jpg)
+*Figure 1: Full system testbench including STM32 control plane, FPGA data plane, and RF analog front-end.*
+
+![PCB Layout Design](figure/pcb_3d_render.jpg)
+*Figure 2: Custom PCB layout design with extensive SPI, UART, ADC, and DAC interfaces.*
+
+![Oscilloscope Waveform](figure/oscilloscope_waveform_verification.jpg)
+*Figure 3: Real-time DSP output waveform verification using a Tektronix oscilloscope.*
+
+![Hardware Debugging](figure/hardware_prototyping_debugging.jpg)
+*Figure 4: Hands-on prototyping and hardware-level debugging.*
+
+![SPI Timing Verification](figure/spi_timing_verification.gif)
+*Figure 5: Hardware-Level Debugging - Verifying SPI communication timing (SCLK and MOSI/MISO alignment) to ensure strict protocol synchronization.*
 ---
 
 ## 📂 Repository Structure

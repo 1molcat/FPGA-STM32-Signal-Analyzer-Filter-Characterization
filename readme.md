@@ -39,7 +39,7 @@ The current RTL data-path has explicit room for synthesizability and precision o
 ![System Testbench Setup](figure/system_testbench_setup.jpg)
 *Figure 1: Full system testbench including STM32 control plane, FPGA data plane, and RF analog front-end.*
 
-![PCB Layout Design](figure/pcb_3d_render.jpg)
+![PCB Layout Design](figure/custom_pcb_layout.png)
 *Figure 2: Custom PCB layout design with extensive SPI, UART, ADC, and DAC interfaces.*
 
 ![Oscilloscope Waveform](figure/oscilloscope_waveform_verification.jpg)

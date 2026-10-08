@@ -50,6 +50,7 @@ The current RTL data-path has explicit room for synthesizability and precision o
 
 ![SPI Timing Verification](figure/spi_timing_verification.gif)
 *Figure 5: Hardware-Level Debugging - Verifying SPI communication timing (SCLK and MOSI/MISO alignment) to ensure strict protocol synchronization.*
+
 ---
 
 ## 📂 Repository Structure
